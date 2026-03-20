@@ -15,13 +15,13 @@ Sistem Penerimaan Mahasiswa Baru berbasis Laravel dengan fitur lengkap untuk sel
 ### 👨‍🎓 **Mahasiswa**
 - ✅ Registrasi Akun dengan **Nomor Tes** otomatis
 - ✅ Login dengan **Nomor Tes + Password**
-- ✅ Pengisian **Data Pribadi** (opsional)
+- ✅ Pengisian **Data Pribadi** 
 - ✅ **Ujian Online** dengan timer 30 menit
 - ✅ Navigasi soal dengan 5 opsi jawaban
 - ✅ Hasil ujian (menunggu verifikasi admin)
-- ✅ **Daftar Ulang** dengan upload berkas (opsional)
+- ✅ **Daftar Ulang** dengan upload berkas 
 - ✅ **Generate NIM** otomatis setelah verifikasi admin
-- ✅ **Kartu Mahasiswa** dengan QR Code (bisa dicetak)
+- ✅ **Kartu Mahasiswa** (bisa dicetak)
 - ✅ **Lupa Nomor Tes** dengan verifikasi password
 
 ### 👨‍💼 **Admin**
@@ -46,49 +46,7 @@ Sistem Penerimaan Mahasiswa Baru berbasis Laravel dengan fitur lengkap untuk sel
 | **Bootstrap 5** | Frontend Framework |
 | **SweetAlert2** | Notifikasi interaktif |
 | **Font Awesome 6** | Icon library |
-| **Simple QR Code** | Generate QR Code kartu |
 
 ---
 
-## 🚀 Instalasi
 
-### Prasyarat
-- PHP 8.3+
-- Composer
-- MySQL
-- Node.js & NPM
-
-### Langkah-langkah
-
-```bash
-# 1. Clone repository
-git clone https://github.com/USERNAME/ITECH.git
-cd ITECH
-
-# 2. Install dependencies
-composer install
-npm install
-
-# 3. Copy environment file
-cp .env.example .env
-
-# 4. Generate application key
-php artisan key:generate
-
-# 5. Konfigurasi database di file .env
-DB_DATABASE=itech
-DB_USERNAME=root
-DB_PASSWORD=
-
-# 6. Jalankan migration & seeder
-php artisan migrate
-php artisan db:seed
-
-# 7. Link storage untuk upload file
-php artisan storage:link
-
-# 8. Build assets
-npm run build
-
-# 9. Jalankan server
-php artisan serve
